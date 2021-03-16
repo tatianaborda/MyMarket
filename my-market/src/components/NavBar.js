@@ -1,4 +1,5 @@
-import styles from './NavBar.css';
+import React from "react";
+import {CartWidget} from './CartWidget';
 
 export const NavBar = () => {
     return(
@@ -24,6 +25,7 @@ export const NavBar = () => {
       </li>
       </ul>
     </div>
+    <CartWidget/>
     </nav>
     )
 }
