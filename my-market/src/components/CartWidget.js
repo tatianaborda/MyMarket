@@ -1,7 +1,7 @@
 import React from "react";
 
 const imgStyles={
-    width: 100,
+    width: 50,
     height: 50
 }; 
 
