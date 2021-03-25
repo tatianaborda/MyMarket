@@ -6,7 +6,6 @@ export const ItemListContainer= () =>{
     const [items, setItems] = useState([])
 
     useEffect(() =>{
-     console.log("hola boluda!")
      const promesa = new Promise((resolve,reject)=>{
 setTimeout(() =>{
     resolve([
@@ -19,7 +18,7 @@ setTimeout(() =>{
      promesa.then((resultado)=>{
         setItems(resultado)
      })
-    })
+    }, [])
     return (
     <div className="container">
         <ItemList items={items}/>
