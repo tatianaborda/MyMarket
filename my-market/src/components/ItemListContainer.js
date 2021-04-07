@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { ItemCount } from "./ItemCount"
 import { ItemList } from "./ItemList"
 
 export const ItemListContainer= () =>{
@@ -22,7 +21,6 @@ setTimeout(() =>{
     return (
     <div className="container">
         <ItemList items={items}/>
-        <ItemCount stock="5" initial="1"/>
         </div>
     )
 }

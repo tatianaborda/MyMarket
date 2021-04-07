@@ -41,7 +41,7 @@ export function ItemCount({stock, initial, onAdd}){
                 <button
                 className="btn btn-outline-primary w-75"
                 type= "button"
-                onClick= {onAdd}>
+                onClick= {() => onAdd(count)}>
                     Agregar producto
                 </button>
             </div>

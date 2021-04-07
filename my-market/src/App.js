@@ -21,6 +21,9 @@ function App() {
         <Route path="/quienessomos">
           <Info/>
         </Route>
+        <Route path="/cart">
+        Mi compra
+        </Route>
         <Route path="*">
         Not found #404
         </Route>
