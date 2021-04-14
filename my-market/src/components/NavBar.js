@@ -20,7 +20,7 @@ export const NavBar = () => {
         <Link className="nav-link" to="/list">Remeras</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link disabled" >Collares</a>
+        <a className="nav-link disabled">Collares</a>
       </li>
       <li className="nav-item">
         <a className="nav-link disabled">Bordados personalizados</a>

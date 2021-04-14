@@ -1,13 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react"
 import { ItemCount } from "./ItemCount"
 import { Link } from "react-router-dom"
+import { CartContext } from '../context/CartContext'
 
 export const ItemDetail = ({ item }) => {
   const [count, setCount] = useState(0)
 
+  const myContext = useContext(CartContext)
+
   const addHandler = (e) => {
     console.log("se agregó un item", e)
     setCount(e)
+    myContext.addItem({item, cantidad: e});
   }
 return(
 <div className="card bg-dark text-white">
