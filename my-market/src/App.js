@@ -6,6 +6,7 @@ import { Info } from './components/Info.js'
 import { ItemDetailContainer } from './components/ItemDetailContainer.js'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { CartProvider } from './context/CartContext'
+import { Cart } from './components/Cart'
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
           <Info/>
         </Route>
         <Route path="/cart">
-        Mi compra
+        <Cart />
         </Route>
         <Route path="*">
         Not found #404
