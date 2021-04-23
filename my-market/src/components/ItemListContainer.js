@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { ItemList } from "./ItemList"
-import {getFirestore} from "../../firebase/"
+import { getFirestore } from "../firebase"
 
 export const ItemListContainer= () =>{
     const [items, setItems] = useState([])
@@ -9,8 +9,14 @@ export const ItemListContainer= () =>{
         const db = getFirestore()
         const itemsCollection = db.collection('items')
         const prom = itemsCollection.get()
-     promesa.then((resultado)=>{
-        setItems(resultado)
+
+     prom.then((snapshot)=>{
+            if(snapshot.size > 0){
+                setItems(snapshot.docs.map(doc => {
+                    return {id:doc.id, ...doc.data()}
+                }
+                ))
+            }
      })
     }, [])
     return (
