@@ -24,6 +24,10 @@ function App() {
         <Route path="/quienessomos">
           <Info/>
         </Route>
+        <Route exact path="/collares">
+        </Route>
+        <Route exact path="/bordadospersonalizados">
+        </Route>
         <Route path="/cart">
         <Cart />
         </Route>

@@ -20,10 +20,10 @@ export const NavBar = () => {
         <Link className="nav-link" to="/list">Remeras</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link disabled">Collares</a>
+      <Link className="nav-link" to="/collares">Collares</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link disabled">Bordados personalizados</a>
+      <Link className="nav-link" to="/bordadospersonalizados">Bordados Personalizados</Link>
       </li>
       </ul>
     </div>
